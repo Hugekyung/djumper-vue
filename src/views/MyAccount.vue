@@ -5,6 +5,14 @@
                 <h1 class="title">회원 정보</h1>
             </div>
 
+            <!-- 기존 회원 정보 조회 & 수정 -->
+            <div class="column is-12">
+                <p class="title">이름</p>
+                <p class="title">이메일</p>
+                <p class="title">비밀번호</p>
+                <p class="title">비밀번호 확인</p>
+            </div>
+
             <div class="column is-12">
                 <button @click="logout()" class="button is-danger">로그 아웃</button>
             </div>
