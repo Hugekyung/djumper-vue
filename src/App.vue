@@ -2,7 +2,7 @@
   <div id="wrapper">
     <nav class="navbar is-dark">
       <div class="navbar-brand">
-        <router-link to="/" class="navbar-item"><strong>Djumper</strong></router-link>
+        <router-link to="/" class="navbar-item"><strong>DJUMPER</strong></router-link>
 
         <a class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar-menu" @click="showMobileMenu = !showMobileMenu">
           <span aria-hidden="true"></span>
@@ -21,7 +21,7 @@
                 </div>
 
                 <div class="control">
-                  <button class="button is-success">
+                  <button class="button is-warning">
                       <span class="icon">
                       <i class="fas fa-search"></i>
                       </span>
@@ -33,7 +33,7 @@
         </div>
 
         <div class="navbar-end">
-          <router-link to="/jumper" class="navbar-item">Jumper</router-link>
+          <router-link to="/jumper" class="navbar-item">JUMPER</router-link>
           <router-link to="/acc" class="navbar-item">ACC</router-link>
 
           <div class="navbar-item">
@@ -46,7 +46,7 @@
                 <router-link to="/log-in" class="button is-light">로그인</router-link>
               </template>
 
-              <router-link to="/cart" class="button is-success">
+              <router-link to="/cart" class="button is-warning">
                 <span class="icon"><i class="fas fa-shopping-cart"></i></span>
                 <span>Cart ({{ cartTotalLength }})</span>
               </router-link>

@@ -1,14 +1,12 @@
 <template>
   <div class="home">
     <section class="hero is-medium is-dark mb-6">
-        <div class="hero-body has-text-centered">
-            <p class="title mb-6">
-                Djumper에 오신 것을 환영합니다!!
-            </p>
-            <p class="subtitle">
-                Djumper는 점퍼 전문 온라인 쇼핑몰입니다.
-            </p>
-        </div>
+        <vueper-slides fade :touchable="false">
+          <vueper-slide
+            v-for="(slide, i) in slides"
+            :key="i"
+            :image="slide.image"/>
+        </vueper-slides>
     </section>
 
     <div class="columns is-multiline">
@@ -26,18 +24,38 @@
 
 <script>
 import axios from 'axios'
-
 import ProductBox from '@/components/ProductBox'
+import { VueperSlides, VueperSlide } from 'vueperslides'
+import 'vueperslides/dist/vueperslides.css'
 
 export default {
   name: 'Home',
   data() {
     return {
-      latestProducts: []
+      slides: [
+        {
+          title: 'Banner1',
+          content: 'banner event1',
+          image: require('@/assets/banner1.jpg')
+        },
+        {
+          title: 'Banner2',
+          content: 'banner event2',
+          image: require('@/assets/banner2.jpeg')
+        },
+        {
+          title: 'Banner3',
+          content: 'banner event3',
+          image: require('@/assets/banner3.jpg')
+        },
+      ],
+      latestProducts: [],
     }
   },
   components: {
-    ProductBox
+    ProductBox,
+    VueperSlides,
+    VueperSlide,
   },
   mounted() {
     this.getLatestProducts()
