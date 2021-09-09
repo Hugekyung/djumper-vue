@@ -2,7 +2,6 @@
 본 프로젝트는 E-commerce 웹 서비스 Djumper의 Front 개발 프로젝트입니다.<br> 
 --> [Backend 이동](https://github.com/Hugekyung/djumper-django)<br><br/>
 ## `Overview`
----
 프로젝트의 목적은 백엔드에서 구현한 API를 프론트엔드에서 어떻게 활용하는지, 백-프론트 사이의 통신 방법과 비동기 처리 방식을 비롯한 전체 웹 서비스 구축 프로세스를 경험하기 위함입니다.<br><br/>
 
 ### Environment
@@ -28,7 +27,6 @@ bulma
 <br><br/>
 
 ## `Usage(Front)`
----
 
 ### 1. CURL 설치
 ```
@@ -56,7 +54,6 @@ sudo npm install -g @vue/cli
 <br><br/>
 
 ## `Project Images`
----
 ### 메인 페이지
 ![dv-main](https://user-images.githubusercontent.com/67989121/132650461-b2e15e16-cbcb-4880-b687-1e04bad59a35.PNG)
 <br>
